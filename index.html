@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8f0">
+  <title>Doggo Club | Mundo de perritos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://images.dog.ceo">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="#">
+      <span class="logo-icon">🐾</span>
+      doggo<span>club</span>
+    </a>
+    <a href="#favoritos" class="nav-fav">♡ Mis favoritos</a>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">✦ TU DOSIS DIARIA DE TERNURA</span>
+        <h1>Un mundo lleno de<br>
+          <span>narices bonitas.</span>
+        </h1>
+        <p>Descubre nuevos amigos peludos, encuentra
+          tu raza favorita y guarda los que te roben el corazón.</p>
+        <a href="#explorar" class="primary-link">Explorar perritos ↓</a>
+      </div>
+      <div class="hero-art">
+        <div class="hero-circle"></div>
+        <span class="floating-heart heart-one">♥</span>
+        <span class="floating-heart heart-two">✦</span>
+        <div class="hero-emoji">🐶</div>
+        <div class="hero-note">hecho con amor ♡</div>
+      </div>
+    </section>
+
+    <section id="explorar" class="explorer">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">LA ESTRELLA DEL MOMENTO</span>
+          <h2>Tu nuevo amiguito</h2>
+        </div>
+        <span class="live-pill"><span></span> En vivo</span>
+      </div>
+
+      <div class="dog-layout">
+        <div class="main-photo-wrap">
+          <img id="dog-image" src="" alt="Un perro adorable" hidden>
+          <div id="loading" class="loading">
+            <span>🐾</span>
+            <p>Buscando un perrito...</p>
+          </div>
+          <div class="photo-label">EDICIÓN PERRUNA ✨</div>
+          <button id="favorite-btn" class="favorite-btn"
+            aria-label="Agregar a favoritos" title="Agregar a favoritos">♡</button>
+        </div>
+
+        <div class="dog-details">
+          <span class="mini-label">HOLA, NUEVO AMIGO 👋</span>
+          <h3 id="dog-name">¡Qué ilusión conocerte!</h3>
+          <p id="dog-description">Cada perrito es una nueva aventura.
+            ¿Quién aparecerá hoy?</p>
+
+          <div class="breed-box">
+            <label for="breed-select">🔎 Descubre una raza</label>
+            <select id="breed-select">
+              <option value="">Cargando razas...</option>
+            </select>
+            <button id="search-breed" class="secondary-btn">
+              Buscar esta raza
+            </button>
+          </div>
+
+          <button id="random-btn" class="primary-btn">
+            <span>🐾</span> ¡Otro perrito!
+          </button>
+          <p class="tiny-note">Advertencia: ternura en niveles extremos.</p>
+          <p id="status-message" class="status-message" role="status"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="favoritos" class="favorites-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">TU PEQUEÑO RINCÓN FELIZ</span>
+          <h2>Galería de favoritos <span>♡</span></h2>
+          <p class="section-description">Los flechazos perrunos se guardan aquí.</p>
+        </div>
+        <span id="favorite-count" class="count-badge">0 perritos</span>
+      </div>
+
+      <div id="favorites-grid" class="favorites-grid"></div>
+
+      <div id="empty-favorites" class="empty-state">
+        <div class="empty-icon">💌</div>
+        <h3>¡Tu álbum te está esperando!</h3>
+        <p>Toca el corazón de cualquier perrito para guardarlo aquí.</p>
+        <a href="#explorar" class="secondary-link">Encontrar mi primer favorito →</a>
+      </div>
+    </section>
+
+    <section class="fun-banner">
+      <span class="banner-emoji">🐕‍🦺</span>
+      <div>
+        <h3>Un perro al día, la tristeza se va.</h3>
+        <p>Tu colección de felicidad empieza con una huellita.</p>
+      </div>
+      <span class="banner-sparkle">✳</span>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Hecho con <span>♥</span> y muchas patitas · Imágenes vía
+      <a href="https://dog.ceo/dog-api/" target="_blank" rel="noopener noreferrer">Dog CEO API</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
